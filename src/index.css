@@ -1,0 +1,3628 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Lexend:wght@100..900&family=Quicksand:wght@300&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Lexend:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f2e8;
+}
+
+/* *************Navbar*************** */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1rem;
+  font-family: sans-serif;
+  background-color: #f6f2e8;
+  width: 100%;
+  /* position: relative; */
+
+}
+
+.logo img {
+  width: 18rem;
+
+}
+
+.nav a {
+  padding: 0em 1rem;
+  text-decoration: none;
+  color: #537292;
+  font-size: .9rem;
+  font-weight: 100;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: .5rem;
+}
+
+
+.navbar .icon {
+  display: none;
+}
+
+.navbar .resource{
+  /* position: absolute; */
+  width: 200px;
+  background-color: black;
+  margin-top: -50px;
+  opacity: 0;
+  z-index: -999;
+  transition: all ease.5s;
+}
+
+/* ******************Hero******************* */
+.hero-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+
+
+/* .hero-container img {
+  width: 100%;
+} */
+.hero-container .image {
+  background-image: url('./components/assets/radhanath-swami-website-hero.webp');
+  height: 100vh;
+  background-size: cover;
+  width: 100%;
+  background-position: 10%;
+}
+
+.heading {
+  position: absolute;
+  top: 6rem;
+  left: 10rem;
+}
+
+.heading h1 {
+  font-size: 3rem;
+  line-height: 4rem;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+}
+
+.heading .pra {
+
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.heading .pra p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #537292;
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+}
+
+.btn {
+  margin-top: 4rem;
+}
+
+.btn button {
+  padding: 1rem;
+  background: none;
+  border: .1rem solid #537292;
+  color: #537292;
+  letter-spacing: .1rem;
+}
+
+
+/* **************************************************** */
+
+.teacher {
+  padding-block: 10rem;
+  padding-inline: 4rem;
+}
+
+.t-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.t-watch {
+  text-align: left;
+  padding-right: 0rem;
+  padding-left: 0rem;
+}
+
+.t-watch h2 {
+  FONT-FAMILY:
+    'Cardo', sans-serif;
+  font-weight: 0;
+  font-style: normal;
+  color: #537292;
+
+
+}
+
+.t-watch h3 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+  font-size: 2rem;
+  margin-block: 2.5rem;
+  letter-spacing: .3rem;
+}
+
+.t-watch p {
+  FONT-FAMILY:
+    'Cardo';
+  letter-spacing: .2rem;
+  font-style: normal;
+  color: #537292;
+  font-size: .9rem;
+}
+
+.t-video {
+  padding: 1rem;
+  position: relative;
+}
+
+.t-video img {
+  border-radius: 50%;
+  height: 18rem;
+  padding-inline: 4rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 12)), url(../src/components/assets/radhanath-swami-mumbai.jpg);
+
+}
+
+.t-video i {
+  position: absolute;
+  top: 8rem;
+  right: 12rem;
+  font-size: 4rem;
+  color: rgb(238, 221, 221);
+}
+
+.t-content p {
+  font-family: "Cardo", serif;
+  font-style: normal;
+  color: #6a7984;
+  text-align: left;
+  font-size: 1.7rem;
+  letter-spacing: 2.6px;
+}
+
+.t-content {
+  flex-wrap: wrap;
+}
+
+.t-content h3 {
+  FONT-FAMILY:
+    'Cardo', sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: #537292;
+  margin-block: 2rem;
+  text-align: left;
+  letter-spacing: .2rem;
+}
+
+@media screen and (max-width:768px) {
+
+
+  .t-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .t-watch {
+    text-align: center;
+  }
+
+  .t-watch h3 {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #537292;
+    font-size: 2.4rem;
+    margin-block: 2.5rem;
+    letter-spacing: .3rem;
+  }
+
+  .t-watch p {
+    FONT-FAMILY:
+      'Cardo';
+    letter-spacing: .2rem;
+    font-style: normal;
+    color: #537292;
+    font-size: 1rem;
+  }
+
+  .t-video {
+    padding-block: 3rem;
+    position: relative;
+  }
+
+  .t-video img {
+    border-radius: 50%;
+    height: 18rem;
+    padding-inline: 0rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 12)), url(../src/components/assets/radhanath-swami-mumbai.jpg);
+
+  }
+
+  .t-video i {
+    position: absolute;
+    top: 10rem;
+    right: 10rem;
+    font-size: 4rem;
+    color: rgb(238, 221, 221);
+  }
+
+  .t-content {
+    text-align: center;
+  }
+
+
+}
+
+/* ******************************* */
+
+
+.feature {
+  background-image: url(./components/assets/radhanath-swami-projects-worldwide.webp);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30%;
+
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, .2);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+}
+
+.overlay h2 {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #f6f2e8;
+  margin-block: 1.5rem;
+  margin-top: 10rem;
+  font-size: 1.5rem;
+  margin-left: 30rem;
+}
+
+.overlay h3 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: .1rem;
+  color: #f6f2e8;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  margin-left: 30rem;
+}
+
+.overlay h4 {
+  color: #f6f2e8;
+  margin-block: 2rem;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 30rem;
+
+}
+
+.f-content button {
+  padding: 1rem;
+  background: transparent;
+  border: .1rem solid white;
+  color: #f6f2e8;
+  margin-left: 30rem;
+}
+
+.f-content {
+  margin-left: 10rem;
+}
+
+@media screen and (max-width) {
+  .feature {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+  }
+
+  /*   
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, .2);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  
+  } */
+
+  .overlay h2 {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #f6f2e8;
+    margin-block: 1.5rem;
+    margin-top: 10rem;
+    font-size: 1.5rem;
+    margin-left: 30rem;
+  }
+
+  .overlay h3 {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: .1rem;
+    color: #f6f2e8;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    margin-left: 30rem;
+  }
+
+  .overlay h4 {
+    color: #f6f2e8;
+    margin-block: 2rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 30rem;
+
+  }
+
+  .f-content button {
+    padding: 1rem;
+    background: transparent;
+    border: .1rem solid white;
+    color: #f6f2e8;
+    margin-left: 30rem;
+  }
+
+  .f-content {
+    margin-left: 30rem;
+
+  }
+
+}
+
+/* ******************************************** */
+
+.r-story {
+  background: url(./components/assets/about-sunset.webp);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  background-position: 60%;
+}
+
+.r-container {
+  margin-top: 2rem;
+  margin-left: 25rem;
+}
+
+.r-content {
+  display: flex;
+  flex-direction: column;
+  color: #f6f2e8;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.r-content h2 {
+  margin: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.r-content h3 {
+  font-size: 1.7rem;
+  margin-bottom: 2.2rem;
+}
+
+.r-content p {
+  font-size: 1.3rem;
+  font-family: "cardo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+
+.r-image img {
+  padding: .7rem;
+}
+
+.r-container button {
+  padding: 1rem;
+  background-color: #97ada5;
+  color: #f6f2e8;
+  border: .1rem solid #f6f2e8;
+  margin-block: 2rem;
+}
+
+@media screen and (max-width:768px) {
+  .r-story {
+    height: 150vh;
+  }
+
+  .r-container {
+    margin-top: 2rem;
+    margin-left: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .r-content {
+    display: flex;
+    flex-direction: column;
+    color: #f6f2e8;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .r-content h2 {
+    margin: 1rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .r-content h3 {
+    text-align: center;
+    width: 365px;
+    font-size: 2.3rem;
+    margin-bottom: 2.2rem;
+    flex-wrap: wrap;
+  }
+
+  .r-content p {
+    text-align: center;
+    width: 365px;
+    font-size: 2rem;
+    font-family: "cardo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .r-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .r-image img {
+    padding: .7rem;
+    height: 18rem;
+    width: 18rem;
+  }
+
+  .r-container button {
+    padding: 1rem;
+    background-color: #97ada5;
+    color: #f6f2e8;
+    border: .1rem solid #f6f2e8;
+    margin-block: 2rem;
+  }
+}
+
+
+/* ************************************* */
+
+
+.s-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+  margin-top: 8rem;
+
+
+}
+
+.s-content {
+  text-align: left;
+
+}
+
+.s-content h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+  font-size: 1.3rem;
+  letter-spacing: .3rem;
+  margin-block: 1rem;
+}
+
+.s-content h1 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+  margin-block: 2rem;
+
+}
+
+.s-content p {
+  font-size: 1rem;
+  font-family: "cardo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .1rem;
+}
+
+.s-img img {
+  border-radius: 50%;
+  height: 20rem;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn button {
+  padding: 1rem;
+  margin-bottom: .5rem;
+  width: 15rem;
+}
+
+.s-img2 {
+  background-image: url(../src/components/assets/rns-smile-line-new.webp);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1000;
+  background-position: 30%;
+  margin-top: 5rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, .3);
+}
+
+@media screen and (max-width:768px) {
+  .s-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .s-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}
+
+/* ************************************* */
+
+
+.exprience {
+  height: 100vh;
+}
+
+.e-container {
+  background-image: url(./components/assets/rns-w.webp);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  top: 0rem;
+  background-position: 50%;
+}
+
+.e-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0rem;
+  width: 100%;
+  padding-block: 10rem;
+  text-align: center;
+}
+
+.e-content h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 1rem;
+  letter-spacing: .3rem;
+  margin-block: 0rem;
+}
+
+.e-content h1 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  margin-block: 2rem;
+  font-size: 1.5rem;
+}
+
+.e-content p {
+  font-size: 1rem;
+  font-family: "cardo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  letter-spacing: .1rem;
+}
+
+.e-content button {
+  padding: 1rem;
+  margin-block: 2rem;
+  width: 15rem;
+  background: transparent;
+  border: .1rem solid #f6f2e8;
+  color: #f6f2e8;
+  margin-left: 30rem;
+}
+
+@media screen and (max-width:768px) {
+  .e-content button {
+    margin-left: 8rem;
+  }
+}
+
+/* ****************************** */
+.signup {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.sign-img {
+  /* position: relative;
+  top: 10.5rem;
+  left: 5rem; */
+}
+
+.sign-content {
+  /* margin-left: 20rem;
+margin-top: 15rem; */
+}
+
+.sign-content h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+  font-size: 1.3rem;
+  margin-block: 1rem;
+}
+
+.sign-content h1 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+  font-size: 3rem;
+  margin-bottom: .5rem;
+
+}
+
+.sign-content p {
+  FONT-FAMILY:
+    'Cardo', sans-serif;
+  font-weight: 0;
+  font-style: normal;
+  color: #537292;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.sign-content .input {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-content .input input {
+  padding: .8rem;
+  margin-bottom: .3rem;
+  background-color: #e4e6e5;
+  border: none;
+  outline: none;
+}
+
+.sign-content .input button {
+  background-color: #31485f;
+  padding: .8rem;
+  color: #e4e6e5;
+}
+
+@media screen and (max-width:768px) {
+  .signup {
+    display: flex;
+    justify-content: center;
+    padding-block: 10rem;
+
+  }
+
+  .sign-img img {
+    width: 25rem;
+  }
+}
+
+/* *********************************** */
+
+.thought {
+  background-image: url(./components/assets/radhanatha-swami-activist.jpg);
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  background-position: 68%;
+
+}
+
+.thought-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, .1);
+}
+
+.th-content {
+  margin-top: 10rem;
+  margin-left: 10rem;
+  text-align: left;
+  flex-wrap: wrap;
+
+}
+
+.th-content h2 {
+  FONT-FAMILY:
+    'Cardo', sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: #ffffff;
+  text-align: left;
+  line-height: 3rem;
+  letter-spacing: .15rem;
+  margin-bottom: 3rem;
+}
+
+.th-content h3 {
+  font-weight: 900;
+  font-family: "Cardo", serif;
+  font-style: normal;
+  color: #f6f2e8;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width:768px) {
+  .th-content {
+    margin-top: 8rem;
+    margin-left: 5rem;
+    text-align: left;
+  }
+}
+
+/* ************************************* */
+.footer {
+  height: 80vh
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.f-container1 img {
+  width: 18rem;
+}
+
+.f-container2 {
+  padding-inline: 1rem;
+}
+
+.f-container2 h2 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: .2rem;
+}
+
+.f-container3 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.f-content1 p {
+  padding-bottom: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+}
+
+.f-content1 h2 {
+  padding-bottom: 2rem;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+  font-size: 1.5rem;
+
+}
+
+.f-content2 input {
+  padding: 1rem;
+  background: transparent;
+  margin-left: .7rem;
+  border: none;
+  border-bottom: .08rem solid #537292;
+  outline: none;
+}
+
+.f-content2 .checkbox {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 2rem;
+
+}
+
+.f-content2 .checkbox input {
+  margin-right: .8rem;
+  width: .9rem;
+}
+
+.f-content2 .checkbox p {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+  letter-spacing: .1rem;
+}
+
+.f-btn button {
+  padding: .8rem 1.5rem;
+  color: #ffffff;
+  background-color: #31485f;
+  font-size: 1rem;
+  width: 15rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width:768px) {
+  .f-container1 {
+    margin-bottom: 2rem;
+  }
+
+  .f-container2 h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .f-container3 {
+    text-align: center;
+    margin-block: 5rem;
+  }
+}
+
+/* **************************************** */
+
+
+.about-img1 {
+  background-image: url(./components//assets/radhanathswami-about.webp);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-position: 75%;
+
+}
+
+.about-content1 {
+  margin: 10rem;
+}
+
+.about-content1 h1 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  margin-block: 1.5rem;
+
+}
+
+.about-content1 p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  line-height: 1.8rem;
+  letter-spacing: .1rem;
+}
+
+.about-img2 {
+  background-image: url(./components//assets/radhanath-swami-mountain.webp);
+  height: 200vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.about-content2 {
+  margin-top: 12rem;
+  margin-left: 15rem;
+}
+
+.about-content2 h1 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  margin-block: 4rem;
+  font-size: 2.5rem;
+  letter-spacing: .2rem;
+
+}
+
+.about-content2 h2 {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #f6f2e8;
+}
+
+.about-content2 p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  line-height: 1.8rem;
+  letter-spacing: .1rem;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+}
+
+
+.about-img3 {
+  background-image: url(./components/assets/radhanath-swami-lecture-speach.jpg);
+  height: 120vh;
+  background-size: cover;
+  display: flex;
+
+}
+
+.about-img3 .about-content3 {
+  margin-top: 17rem;
+  margin-left: 10rem;
+  text-align: left;
+}
+
+.about-content3 h2 {
+  margin-bottom: 2rem;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #f6f2e8;
+
+}
+
+.about-content3 h1 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.about-img4 {
+  width: 100%;
+}
+
+.about-content4 {
+  height: 100vh;
+  padding: 5rem;
+}
+
+.about-cont {
+  text-align: left;
+  position: relative;
+}
+
+.about-cont h1 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #31485f;
+  line-height: 3.5rem;
+  letter-spacing: .2rem;
+  font-size: 2.5rem;
+}
+
+.about-cont p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #31485f;
+  line-height: 1.8rem;
+  letter-spacing: .1rem;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+}
+
+.about-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slide {
+  width: 70%;
+}
+
+.slide img {
+  width: 70%;
+}
+
+.slide-img {
+  display: flex;
+}
+
+.slide-img img {
+  width: 8rem;
+  margin-right: .5rem;
+  border: .2rem solid #97ada5;
+}
+
+
+
+.abt-imgs {
+  height: 100vh;
+  width: 100%;
+
+
+}
+
+.abt-imgs img {
+  width: 100%;
+}
+
+.about-img6 {
+  position: relative;
+}
+
+.ab-gl-img1 {
+  position: absolute;
+  top: 24rem;
+  left: 3rem;
+}
+
+.gl-content {
+  text-align: left;
+  position: absolute;
+  top: 24rem;
+  left: 50%
+}
+
+.gl-content h1 {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  letter-spacing: .1rem;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+}
+
+.gl-content p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #537292;
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+  margin-block: 2rem;
+  font-size: 1.1rem;
+}
+
+.gl-content h3 {
+  font-size: 1.5rem;
+  line-height: 4rem;
+  letter-spacing: .1rem;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+}
+
+.ab-gl-img2 {
+  position: absolute;
+  top: 55rem;
+  left: 47%;
+}
+
+.ab-gl-img2 img {
+  width: 18rem;
+}
+
+.ab-gl-img3 {
+  position: absolute;
+  top: 60rem;
+  left: 18%;
+}
+
+.ab-gl-img3 img {
+  width: 20rem;
+}
+
+.ab-gl-img4 {
+  position: absolute;
+  top: 70rem;
+  left: 47%;
+}
+
+.ab-gl-img4 img {
+  width: 18rem;
+}
+
+.ab-gl-img5 {
+  position: absolute;
+  top: 57rem;
+  left: 73%;
+}
+
+.ab-gl-img5 img {
+  width: 18rem;
+}
+
+.about-img7 {
+  height: 100vh;
+  position: absolute;
+  top: 80%;
+}
+
+.about-img7 {
+  height: 100vh;
+  position: absolute;
+  top: 100rem;
+  left: 73%;
+}
+
+.obama {
+  position: relative;
+
+}
+
+.obamaimg {
+  position: absolute;
+  top: 90rem;
+  width: 100%;
+}
+
+.obamaimg img {
+  width: 100%;
+}
+
+.obama-content {
+  position: absolute;
+  top: 15rem;
+  left: 45rem;
+  line-height: 2rem;
+  color: #f6f2e8;
+}
+
+.obama-content h2 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: .1rem;
+}
+
+.obama-content h1 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.philanthropist {
+  position: relative;
+
+}
+
+.ph-container {
+  position: absolute;
+  top: 131rem;
+  width: 100%;
+  background-color: #98abb2;
+  display: flex;
+  justify-content: space-around;
+  padding-block: 3rem;
+}
+
+.ph-container .ph-img {
+  margin-top: 5rem;
+
+}
+
+.ph-container .ph-content {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ph-content h1 {
+  font-size: 2.7rem;
+  line-height: 4rem;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  letter-spacing: .1rem;
+}
+
+.ph-content p {
+  text-align: left;
+  letter-spacing: .1rem;
+  line-height: 1.5rem;
+  margin-top: 2rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.ph-content button {
+  margin-top: 3rem;
+  padding: 1rem;
+  width: 10rem;
+  background: transparent;
+  border: .1rem solid #ffffff;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.p-contaier3 {
+  width: 100%;
+  height: 100vh;
+}
+
+.award {
+  position: relative;
+  background-color: #537292;
+}
+
+.award-container {
+  position: absolute;
+  top: 171rem;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.award-container img {
+  height: 100vh;
+  width: 100%;
+  margin-top: 0rem;
+  background-image: url('./components/assets/award.webp');
+  background-size: cover;
+}
+
+.award-content {
+  margin-top: 8rem;
+}
+
+.award-content h1 {
+  font-size: 2rem;
+  line-height: 4rem;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.wining {
+  position: relative;
+}
+
+.win-container {
+  position: absolute;
+  top: 210rem;
+  display: flex;
+  justify-content: space-around;
+
+  width: 100%;
+}
+
+.win-container .win-img img {
+  height: 28rem;
+
+  margin-top: 5rem;
+}
+
+.win-container .win-content {
+  margin-top: 5rem;
+
+}
+
+.win-content h1 {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+
+}
+
+.win-content p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #537292;
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+}
+
+.win-content button {
+  margin-top: 3rem;
+  padding: 1rem;
+  background: transparent;
+  color: #537292;
+  border: .1rem solid #537292;
+  font-size: 1rem;
+}
+
+.wisdom-img {
+  height: 100vh;
+  background-image: url(./components//assets/RNS-Newsletter-Header.jpg);
+}
+
+.wisdom-img h1 {
+  margin-left: 5rem;
+  padding-top: 10rem;
+  font-size: 3rem;
+  line-height: 4rem;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+}
+
+.wisdom-img p {
+  margin-left: 5rem;
+  padding-block: .5rem;
+  letter-spacing: .15rem;
+  color: #537292;
+}
+
+.w-content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.w-content h1 {
+  margin-top: 4rem;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: .2rem;
+  color: #537292;
+}
+
+.w-cont {
+  margin-top: 4rem;
+}
+
+.w-cont p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #537292;
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+}
+
+.w-1,
+.w-2,
+.w-3 {
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+.w-content2 {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.w-content2 p {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: .2rem;
+  color: #537292;
+}
+
+.w-content2 h2 {
+  margin-top: 2rem;
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #537292;
+  letter-spacing: .1rem;
+  font-size: 1.7rem;
+
+}
+
+.input-tag {
+  margin-top: 2rem;
+
+}
+
+.input-tag input {
+  padding: .5rem 2.8rem;
+  margin-right: .5rem;
+  background: transparent;
+  border: none;
+  border-bottom: .07rem solid #537292;
+}
+
+.checkbox2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.checkbox2 p {
+  letter-spacing: .1rem;
+  margin-left: 1rem;
+  font-size: .9rem;
+}
+
+.w-content2 button {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 33rem;
+  background-color: #537292;
+  color: #ffffff;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.nf-img {
+  background-image: url(./components/assets/RNS-Newsletter-Footer-1.jpg);
+  height: 150vh;
+
+}
+@media screen and (max-width:768px) {
+  
+
+
+.about-content1 {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+
+.about-img2 {
+ 
+  background-position: 10%;
+}
+
+.about-content2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 13rem;
+  margin-top: 30rem;
+}
+.about-content2 p{
+  width: 30rem;
+}
+
+
+
+
+
+
+.about-img3 {
+  background-image: url(./components/assets/radhanath-swami-lecture-speach.jpg);
+  height: 120vh;
+  background-size: cover;
+  display: flex;
+  background-position: 60%;
+
+}
+
+.about-img3 .about-content3 {
+  margin-top: 15rem;
+  margin-left: 4rem;
+  text-align: left;
+}
+
+.about-content3 h2 {
+ font-size: 1 rem;
+
+}
+
+.about-content3 h1 {
+font-size: 3rem;
+}
+
+.about-img4 {
+  width: 100%;
+}
+
+.about-content4 {
+  height: 100vh;
+  padding-top: 9rem;
+}
+
+
+
+
+
+
+.about-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slide {
+  width: 27rem;
+  height: 15rem;
+  
+}
+
+.slide img {
+  width: 65rem;
+  height: 30rem;
+}
+
+.slide-img {
+  display: none;
+}
+
+
+
+
+.abt-imgs {
+  height: 100vh;
+  width: 100%;
+
+
+}
+
+.abt-imgs img {
+  width:100%;
+  height: 100vh;
+}
+
+.about-img6 {
+  height: 10vh;
+  display: none;
+ position: relative;
+  
+}
+.about-global{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.ab-gl-img1 {
+  position: absolute;
+  top: 30rem;
+  width: 2rem;
+ 
+}
+
+.gl-content {
+
+}
+
+.gl-content h1 {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  letter-spacing: .1rem;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+}
+
+.gl-content p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #537292;
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+  margin-block: 2rem;
+  font-size: 1.1rem;
+}
+
+.gl-content h3 {
+  font-size: 1.5rem;
+  line-height: 4rem;
+  letter-spacing: .1rem;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+}
+
+.ab-gl-img2 {
+
+}
+
+.ab-gl-img2 img {
+  width: 18rem;
+}
+
+.ab-gl-img3 {
+
+}
+
+.ab-gl-img3 img {
+  width: 20rem;
+}
+
+.ab-gl-img4 {
+
+}
+
+.ab-gl-img4 img {
+  width: 18rem;
+}
+
+.ab-gl-img5 {
+ 
+}
+
+.ab-gl-img5 img {
+  width: 18rem;
+}
+
+.about-img7 {
+  height: 100vh;
+  position: absolute;
+  top: 0
+}
+
+.about-img7 {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0%;
+}
+
+.obama {
+  position: relative;
+
+}
+
+.obamaimg {
+  position: absolute;
+  top: 5rem;
+  width: 0%;
+}
+
+.obamaimg img {
+  width: 100%;
+}
+
+.obama-content {
+  position: absolute;
+  top: 15rem;
+  left: 45rem;
+  line-height: 2rem;
+  color: #f6f2e8;
+}
+
+.obama-content h2 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: .1rem;
+}
+
+.obama-content h1 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.philanthropist {
+  position: relative;
+
+}
+
+.ph-container {
+  position: absolute;
+  top: 131rem;
+  width: 100%;
+  background-color: #98abb2;
+  display: flex;
+  justify-content: space-around;
+  padding-block: 3rem;
+}
+
+.ph-container .ph-img {
+  margin-top: 5rem;
+
+}
+
+.ph-container .ph-content {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ph-content h1 {
+  font-size: 2.7rem;
+  line-height: 4rem;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  letter-spacing: .1rem;
+}
+
+.ph-content p {
+  text-align: left;
+  letter-spacing: .1rem;
+  line-height: 1.5rem;
+  margin-top: 2rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.ph-content button {
+  margin-top: 3rem;
+  padding: 1rem;
+  width: 10rem;
+  background: transparent;
+  border: .1rem solid #ffffff;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.p-contaier3 {
+  width: 100%;
+  height: 100vh;
+}
+
+.award {
+  position: relative;
+  background-color: #537292;
+}
+
+.award-container {
+  position: absolute;
+  top: 171rem;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.award-container img {
+  height: 100vh;
+  width: 100%;
+  margin-top: 0rem;
+  background-image: url('./components/assets/award.webp');
+  background-size: cover;
+}
+
+.award-content {
+  margin-top: 8rem;
+}
+
+.award-content h1 {
+  font-size: 2rem;
+  line-height: 4rem;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.wining {
+  position: relative;
+}
+
+.win-container {
+  position: absolute;
+  top: 210rem;
+  display: flex;
+  justify-content: space-around;
+
+  width: 100%;
+}
+
+.win-container .win-img img {
+  height: 28rem;
+
+  margin-top: 5rem;
+}
+
+.win-container .win-content {
+  margin-top: 5rem;
+
+}
+
+.win-content h1 {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+
+}
+
+.win-content p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #537292;
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+}
+
+.win-content button {
+  margin-top: 3rem;
+  padding: 1rem;
+  background: transparent;
+  color: #537292;
+  border: .1rem solid #537292;
+  font-size: 1rem;
+}
+
+.wisdom-img {
+  height: 100vh;
+  background-image: url(./components//assets/RNS-Newsletter-Header.jpg);
+  background-position: 47%;
+}
+
+.wisdom-img h1 {
+  margin-left: 5rem;
+  padding-top: 10rem;
+  font-size: 3rem;
+  line-height: 4rem;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+}
+
+.wisdom-img p {
+  margin-left: 5rem;
+  padding-block: .5rem;
+  letter-spacing: .15rem;
+  color: #537292;
+}
+
+.w-content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.w-content h1 {
+  margin-top: 4rem;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: .2rem;
+  color: #537292;
+}
+
+.w-cont {
+  margin-top: 4rem;
+}
+
+.w-cont p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #537292;
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+}
+
+.w-1,
+.w-2,
+.w-3 {
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+.w-content2 {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.w-content2 p {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: .2rem;
+  color: #537292;
+}
+
+.w-content2 h2 {
+  margin-top: 2rem;
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #537292;
+  letter-spacing: .1rem;
+  font-size: 1.7rem;
+
+}
+
+.input-tag {
+  margin-top: 2rem;
+
+}
+
+.input-tag input {
+  padding: .5rem 2.8rem;
+  margin-right: .5rem;
+  background: transparent;
+  border: none;
+  border-bottom: .07rem solid #537292;
+}
+
+.checkbox2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.checkbox2 p {
+  letter-spacing: .1rem;
+  margin-left: 1rem;
+  font-size: .9rem;
+}
+
+.w-content2 button {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 33rem;
+  background-color: #537292;
+  color: #ffffff;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.nf-img {
+  background-image: url(./components/assets/RNS-Newsletter-Footer-1.jpg);
+  height: 120vh;
+  background-position: 60%;
+
+}
+}
+@media screen and (max-width:768px) {
+.w-content{
+  padding: 2rem;
+} 
+.w-content p{
+  font-size: 1.5rem;
+} 
+.w-content2 {
+  padding: 2rem;
+}
+.w-content2 p{
+  font-size: 1.4rem;
+}
+}
+
+
+
+/* ************************************* */
+
+
+.contact-img {
+  background-image: url('./components/assets/look-down-rns.webp');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: 80%;
+}
+
+.contact-content {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+.contact-content h1 {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+}
+
+.contact-content p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #537292;
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width:768px) {
+  .contact-content{
+    height: 70vh;
+    margin-top: 5rem;
+  }
+  .contact-content p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+/* **************************** */
+
+
+.get-img {
+  background-image: url(./components/assets/radhanath-swami-devotees-bhakti-yoga.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  position: relative;
+  background-position: 50%;
+}
+
+.g-i-content h1 {
+  font-size: 3rem;
+  line-height: 4rem;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+  margin-left: 5rem;
+}
+
+.g-i-content p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #537292;
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+  margin-left: 5rem;
+}
+
+.getinvolved-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.getinvolved-content h1 {
+  font-size: 2.2rem;
+  line-height: 4rem;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.getinvolved-content p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #537292;
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+  margin-top: 2rem;
+}
+
+.g-c-i-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+}
+
+.g-c-i-content h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+  margin: 2rem;
+}
+
+.g-c-i-content h1 {
+  font-size: 2.3rem;
+  line-height: 4rem;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+  letter-spacing: .2rem;
+  margin-bottom: 1rem;
+}
+
+.g-c-i-content p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #537292;
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+}
+
+.g-c-i-content button {
+  margin: 1.5rem;
+  padding: .8rem 1.5rem;
+  background: transparent;
+  border: .08rem solid #537292;
+  outline: none;
+  color: #537292;
+}
+
+.g-c-i-img {
+  background-image: url('./components//assets/radhanath-swami-projects-worldwide.webp');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, .2);
+  display: flex;
+  flex-direction: column;
+}
+
+.give-back {
+  display: flex;
+  flex-direction: column;
+  background-color: #98abb2;
+
+
+}
+
+.giveback-content {
+  text-align: center;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.giveback-content h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  margin: 2rem;
+}
+
+.giveback-content h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  letter-spacing: .1rem;
+  margin-bottom: 1rem;
+}
+
+.giveback-container {
+  background-color: #98abb2;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.circlebox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+
+.box-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+.box-img img {
+  border-radius: 50%;
+  width: 12rem;
+}
+
+.box-img h2 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  margin-top: 2.5rem;
+}
+
+.box-img p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+@media screen and (max-width:768px) {
+  .g-i-content h1{
+font-size: 4rem;
+line-height: 5rem;
+  }
+  .getinvolved-content h1{
+    font-size: 3rem;
+  }
+  .getinvolved-content p{
+    font-size: 1.8rem;
+    width: 35rem;
+    padding: 2rem;
+    line-height: 3rem;
+  }
+  .giveback-content h2{
+    font-size: 1.5rem;
+  }
+.g-c-i-content h1{
+  margin-left: 1rem;
+  text-align: center;
+}
+.g-c-i-content p{
+  margin-left: 1rem;
+  text-align: center;
+}
+
+}
+
+/* ********************************* */
+
+
+.vani-banner {
+  background-image: url('./components/assets/Radhanath-swami-vani-banner-3.jpg');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vani-banner h1 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  letter-spacing: .1rem;
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  margin-left: 1rem;
+}
+
+.vani-banner p {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  margin-left: 1rem;
+}
+
+.vani-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70vh;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 5rem;
+}
+
+.vani-cont h1 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+  letter-spacing: .1rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+
+}
+
+.vani-cont p {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+  margin-bottom: 1rem;
+}
+
+.vani-btn button {
+  padding: 1rem 2rem;
+  margin-left: 1rem;
+  background: none;
+  border: .1rem solid #97ada5;
+  color: #537292;
+  margin-top: 3rem;
+}
+
+.vani-img img {
+  border-radius: 50%;
+}
+
+.vani-offer {
+  background-color: #80a1a2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 4rem;
+  flex-wrap: wrap;
+
+}
+
+.vani-offer h1 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: .1rem;
+  color: #f6f2e8;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.v-container {
+  padding-inline: 5rem;
+}
+
+.v-offer {
+  margin-top: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.v-offer h2 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: .1rem;
+  color: #f6f2e8;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.v-offer img {
+  border-radius: 50%;
+  height: 12rem;
+
+}
+
+.v-offer p {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+.vani-footer {
+  background-image: url(./components/assets/RNS-Vani-School-Footer-1.jpg);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.vani-footer p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  letter-spacing: .1rem;
+  margin-left: 3rem;
+
+}
+
+.vani-footer h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+
+
+
+/* .initiative {
+  height: 100vh;
+  padding: 2rem 7rem;
+  displaCy: block;
+} */
+/* 
+.init-container {
+  border-top: .1rem solid #80a1a2;
+}
+
+.init-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.init-list a {
+  margin-left: 5rem;
+  margin-top: 4rem;
+  font-size: 1.3rem;
+  color: #6a7984;
+} */
+
+
+
+
+
+
+/* ****************************** */
+.homestate {
+  height: 100vh;
+  padding: 4rem 2rem;
+}
+
+.state-container {
+  display: flex;
+
+}
+
+.state-container {
+  display: flex;
+  padding-inline: 2rem;
+}
+
+.state-list h2 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0rem;
+  font-size: .9rem;
+  border-bottom: .1rem solid #537292;
+  padding: 1.5rem 2.1rem;
+  text-align: right;
+  color: #537292;
+}
+
+.state-content1 {
+  margin-left: 3rem;
+}
+
+.stateimg {
+  padding-block: 2rem;
+  border-bottom: .1rem solid #6a7984;
+}
+
+.stateimg img {
+  height: 18rem;
+}
+
+.statecontent {
+  margin-top: 2rem;
+  padding-block: 2rem;
+  border-bottom: .1rem solid #6a7984;
+}
+
+.statecontent h2 {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #537292;
+}
+
+.statecontent ul li {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #537292;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+/* *************************************** */
+
+
+.recovery-container1 {
+  background-image: url('./components/assets/recovery.webp');
+  height: 85vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* .recovery-container1 h1,
+p {
+  margin-left: 3rem;
+} */
+
+.recovery-container1 h1 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: .1rem;
+  color: #f6f2e8;
+  line-height: 4.5rem;
+  font-size: 4rem;
+}
+
+.recovery-container1 p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: .09rem;
+  margin-top: 1rem;
+}
+
+.recovery-container2 {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.recovery-container2 h1 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: .1rem;
+  color: #537292;
+  line-height: 4.5rem;
+  font-size: 2.5rem;
+}
+
+.recovery-container2 p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #537292;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: .09rem;
+  margin-top: 1rem;
+  margin-left: 0rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  background: transparent;
+  border: .07rem solid #537292;
+  color: #537292;
+}
+
+.r-img2 img {
+  border-radius: 50%;
+}
+
+.recovery-container3 {
+  background-color: #80a1a2;
+}
+
+.rcimg-container {
+  display: flex;
+  justify-content: center;
+  margin-left: -10rem;
+  align-items: center;
+  padding-block: 5rem;
+}
+
+.rcimg-container .rc img {
+  border-radius: 50%;
+  height: 13rem;
+}
+
+.rcimg-container .rc h2 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: .1rem;
+  color: #f6f2e8;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.rcimg-container .rc p {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  margin-top: 1rem;
+  margin-left: 0rem;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  margin-top: 1rem;
+  margin-left: 0rem;
+}
+
+.recovery-container4 {
+  background-image: url('./components/assets/radhanath-swami-bhakti-praying.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: center;
+}
+
+.recovery-container4 p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  line-height: 1.9rem;
+  letter-spacing: .1rem;
+  font-size: 1.5rem;
+  margin-right: 5rem;
+}
+
+.recovery-container4 h2 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: .1rem;
+  color: #f6f2e8;
+  margin-right: 5rem;
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+
+/* ********************** */
+
+.b-container1 {
+  background-image: url('./components/assets/bhakti-center-nyc.webp');
+  height: 130vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* .b-container1 h1,p,a{
+  margin-left: 5rem;
+  
+} */
+.b-container1 h1 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: .1rem;
+  color: #ffffff;
+  font-size: 3rem;
+  margin-left: 5rem;
+  padding-bottom: 1rem;
+}
+
+.b-container1 p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  line-height: 1.9rem;
+  letter-spacing: .1rem;
+  font-size: 1rem;
+  margin-left: 5rem;
+  padding-bottom: 1rem;
+}
+
+.b-container1 a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-left: 5rem;
+  padding-bottom: 1rem;
+}
+
+.b-container1 a i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.b-container2 {
+  text-align: center;
+}
+
+.b-container2 {
+  padding-block: 5rem;
+}
+
+.b-container2 h1 {
+  margin-bottom: 3rem;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: .1rem;
+  color: #537292;
+  font-size: 3rem;
+}
+
+.b-container2 p {
+  margin-bottom: 1.5rem;
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #6a7984;
+  line-height: 1.2rem;
+  letter-spacing: .1rem;
+  font-size: 1rem;
+}
+
+.b-container3 {
+  background-image: url('./components/assets/tbc-rns-yoga-people.jpg');
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.b-container3 h1 {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .1rem;
+  color: #ffffff;
+  font-size: 3rem;
+  margin-left: 4rem;
+  line-height: 4rem;
+}
+
+.b-container3 h2 {
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+  FONT-FAMILY:
+    'Cardo', sans-serif;
+  font-weight: 0;
+  font-style: normal;
+  color: #ffffff;
+}
+
+
+.b-container4 {
+  display: flex;
+  padding: 4rem;
+  flex-direction: column;
+}
+
+.b-space-container {
+  display: flex;
+}
+
+.b-space-container .b-space-img img {
+  height: 30rem;
+}
+
+.b-space-content {
+  padding: 2rem;
+}
+
+.b-space-container .b-space-content h1 {
+  margin-bottom: 0rem;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: .1rem;
+  color: #537292;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.b-space-content p {
+  margin-bottom: 1rem;
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #6a7984;
+  line-height: 1.2rem;
+  letter-spacing: .1rem;
+  font-size: 1rem;
+}
+
+.b-tample-city {
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+}
+
+.b-tample-content {
+  padding-block: 2rem;
+}
+
+.b-tample-content h1 {
+  margin-bottom: 0rem;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: .1rem;
+  color: #537292;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.b-tample-content p {
+  margin-bottom: 1rem;
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #6a7984;
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+  font-size: 1rem;
+}
+
+.b-tample-img img {
+  height: 30rem;
+  margin-left: 1rem;
+}
+
+
+.b-cont5-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.b-cont5img {
+  background-image: url('./components/assets/tbc-rns-groupchat.jpg');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, .2);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.b-cont5img h1 {
+  margin-left: 23rem;
+  margin-top: 3rem;
+  font-size: 3.5rem;
+  color: #537292;
+}
+
+.b-cont5img h2 {
+  color: #537292;
+}
+
+.b-5-content1 {
+  padding: 4rem;
+  text-align: center;
+
+}
+
+.b-5-content1 p {
+  margin-bottom: 2rem;
+  letter-spacing: .1rem;
+  color: #537292;
+}
+
+.b-5-content1 h2 {
+  color: #537292;
+}
+
+.b-5-content2 {
+  display: flex;
+  padding: 2rem;
+}
+
+.b-5-content2 .b-5-cont2-social-content {
+  padding: 1rem;
+  padding-left: 3rem;
+}
+
+.b-5-content2 .b-5-cont2-social-content h1 {
+  margin-bottom: 0rem;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: .1rem;
+  color: #537292;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.b-5-content2 .b-5-cont2-social-content p {
+  margin-bottom: 1rem;
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #6a7984;
+  line-height: 1.2rem;
+  letter-spacing: .1rem;
+  font-size: 1rem;
+}
+
+.b-5-content2 .b-5-cont2-social-img img {
+  height: 30rem;
+}
+
+.b-5-content3 {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.b-5-content3 .b-5-cont2-community-content h1 {
+  margin-bottom: 0rem;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: .1rem;
+  color: #537292;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.b-5-content3 .b-5-cont2-community-content p {
+  margin-bottom: 1rem;
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #6a7984;
+  line-height: 1.2rem;
+  letter-spacing: .1rem;
+  font-size: 1rem;
+}
+
+.b-5-content3 .b-5-cont2-community-img img {
+  height: 30rem;
+}
+
+.b-5-content4 {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.b-5-content5 {
+  background-image: url('./components//assets/tbc-rns-flowers-oasis.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.resource {
+  height: 100vh;
+  padding: 2rem 7rem;
+  display: block;
+}
+
+.resource-container {
+  border-top: .1rem solid #80a1a2;
+}
+
+.resource-list {
+  display: none;
+  flex-direction: column;
+}
+
+.resource-list a {
+  margin-left: 5rem;
+  margin-top: 4rem;
+  font-size: 1.1rem;
+  color: #6a7984;
+}
+
+
+/* **************************** */
+
+.media-container1 img {
+  width: 100%;
+  background-size: cover;
+}
+
+.media-container1 {
+  position: relative;
+}
+
+.media-container1 i {
+  position: absolute;
+  font-size: 8rem;
+  left: 35rem;
+  top: 15rem;
+  z-index: 1000;
+  color: #e4e6e5;
+
+
+}
+
+/* ***************** */
+
+
+.book-container1 {
+  background-image: url('./components/assets/radhanatha-swami-books-back.jpg');
+  height: 120vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.book-c1-content h1 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: .1rem;
+  color: #ffffff;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.book-c1-content p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  line-height: 1.2rem;
+  letter-spacing: .1rem;
+  font-size: 1rem;
+}
+
+.book-c1-img img {
+  padding: 1rem;
+}
+
+.book-container2 {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-container2 p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #537292;
+  line-height: 1.9rem;
+  letter-spacing: .1rem;
+  font-size: 1.4rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.book-container2 h2 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: .1rem;
+  color: #000;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+
+}
+
+.book-container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  text-align: center;
+  padding-block: 5rem;
+}
+
+.bk3-content h3 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: .1rem;
+  color: #537292;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.bk3-content p {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #537292;
+  line-height: 1.9rem;
+  letter-spacing: .1rem;
+  font-size: 1rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.bk-cont-img img {
+  height: 25rem;
+}
+
+.book-container4 {
+  background-image: url('./components/assets/radhanath-swami-book-signing.jpg');
+  height: 100vh;
+}
+
+
+@media screen and (max-width:998px) {
+  html {
+    font-size: 75%;
+  }
+
+  .nav{
+    display: none;
+  }
+  .navbar.icon{
+    display: block;
+  }
+}
+
+@media screen and (max-width:768px) {
+  html {
+    font-size: 75%;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .logo img {
+    width: 25rem;
+  }
+
+  .navbar .icon {
+    display: flex;
+    gap: .5rem;
+    width: 4rem;
+    margin-right: 2rem;
+    padding-block: 2rem;
+    color: #494c4f;
+    font-size: 2rem;
+
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .logo img {
+    width: 30rem;
+  }
+
+  .hero-container .image img {
+    width: 100%;
+    height: 100vh;
+
+  }
+
+  .heading {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+
+
+}
+
+
+
+
+.container {
+  width: 80%;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*background-color: red;*/
+}
+
+
+.container ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  height: 10rem;
+}
+
+.container ul li {
+  height: 10rem;
+  line-height: 10rem;
+  position: relative;
+  cursor: pointer;
+  /*background-color: yellow;*/
+}
+
+.container ul li a:hover,
+.container ul li:hover {
+  color: red;
+}
+
+.container .drop-down {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  height: auto;
+  min-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 2rem;
+  top: 5rem;
+  transition: all .3s linear;
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container ul li:hover>.drop-down {
+  visibility: visible;
+  opacity: 1;
+  top: 10rem;
+}
+
+.container .drop-down li {
+  height: 3rem;
+  line-height: 3rem;
+  width: 100%;
+  text-align: center;
+  transition: all .3s linear;
+  /*border: 1px solid red;*/
+}
+
+.container .drop-down li:hover {
+  background-color: white;
+}
+
+
+.dropdown{
+  position: relative;
+}
+
+
+.new-dropdown {
+  background-color: #f6f2e8;
+  height: 50vh;
+  width: 210px;
+  position: absolute;
+  z-index: 243;
+  gap: 20px;
+  flex-direction: column;
+  /* top: 12rem; */
+  padding: 1rem 2rem;
+  display: flex;
+  visibility: hidden;
+ 
+}
+
+
+.dropdown:hover .new-dropdown{
+  background-color: #f6f2e8;
+  height: 30vh;
+  width: 200px;
+  position: absolute;
+  top: 2rem;
+  z-index: 243;
+  gap: 20px;
+  flex-direction: column;
+  /* top: 12rem; */
+  padding: 1rem 2rem;
+  /* display: block; */
+  visibility: visible;
+
+}
+
+.dropdown1{
+  position: relative;
+}
+
+
+.new-dropdown1 {
+  background-color: #f6f2e8;
+  height: 10vh;
+  width: 100px;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  z-index: 243;
+  gap: 20px;
+  flex-direction: column;
+  /* top: 12rem; */
+  padding: 1rem 2rem;
+  display: flex;
+  visibility: hidden;
+ 
+}
+
+
+.dropdown1:hover .new-dropdown1{
+  background-color: rgb(252, 252, 236);
+  height: 25vh;
+  width: 150px;
+  position: absolute;
+  z-index: 243;
+  gap: 20px;
+  flex-direction: column;
+  /* top: 12rem; */
+  padding: 1rem 2rem;
+  /* display: block; */
+  visibility: visible;
+
+}
+
+ 
+
+
+/* Navbar styles */
+
+/* Navbar styles */
+
+/* Dropdown styles */
+
+/* Sidebar styles */
+.navbar a{
+  z-index: 1000;
+}
+.icon {
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 23rem;
+  left: -250px;
+  width: 250px;
+  height: 50vh;
+  /* Adjust sidebar height to cover the full viewport */
+  background-color: #f6f2e8;
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  color: #537292;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #537292;
+  /* Adjust sidebar link color */
+  display: block;
+  padding: 10px 0;
+}
+
+.sidebar a:hover {
+  background-color: #dcdcdc;
+  /* Adjust hover background color */
+  color: #333;
+  /* Adjust hover link color */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+   
+
+  .sidebar {
+    left: 0;
+  }
+}
